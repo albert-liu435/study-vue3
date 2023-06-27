@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/albert-liu435/study-vue3#readme",
   "dependencies": {
-    "then-fs": "^2.0.0"
+    "then-fs": "^2.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5"
   }
 }

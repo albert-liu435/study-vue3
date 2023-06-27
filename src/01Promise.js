@@ -3,7 +3,6 @@
 //https://blog.csdn.net/m0_46846526/article/details/119345337
 //https://zhuanlan.zhihu.com/p/598174671
 
-
 //函数有两个形参resolve和reject
 const p = new Promise(function (resolve, reject) {
   //函数内部封装一个异步操作
