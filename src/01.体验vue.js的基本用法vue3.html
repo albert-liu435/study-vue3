@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./lib/vue-3.3.4.js"></script>
+  </head>
+  <body>
+    <!-- 2. 声明要被 vue 所控制的 DOM 区域 -->
+    <div id="app">{{age}}</div>
+
+    <!-- 1. 导入 vue 的脚本文件 -->
+    <!-- <script src="./lib/vue-2.6.12.js"></script> -->
+    <!-- <script src="./lib/vue-3.3.4.js"></script> -->
+
+    <!-- 3. 创建 vue 的实例对象 -->
+    <script>
+      const HelloVueApp = {
+        data() {
+          return {
+            username: "zs",
+            age: 20,
+          };
+        },
+      };
+
+      Vue.createApp(HelloVueApp).mount("#app");
+    </script>
+  </body>
+</html>
