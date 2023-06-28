@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./lib/vue-3.3.4.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 把username对应的值，渲染到第一个p标签中 -->
+      <!-- <p v-text="username"></p> -->
+      <!-- 把gender对应的值，渲染到第二个p标签中 -->
+      <!-- 默认的文本是性别，会被gender的值覆盖掉 -->
+      <!-- <p v-text="gender">性别</p> -->
+
+      <!-- 使用{{}}插值表达式，将对应的值渲染到元素的内容节点中，同时保留元素自身的默认值 -->
+      <p>姓名：{{username}}</p>
+      <p>性别：{{gender}}</p>
+
+      <p>---------</p>
+
+      <!-- 如果要把包含 HTML 标签的字符串渲染为页面的 HTML 元素，
+      则需要用到 v-html 这个指令 -->
+      <p v-text="desc"></p>
+      <p>{{desc}}</p>
+      <p v-html="desc"></p>
+    </div>
+
+    <!-- 3. 创建 vue 的实例对象 -->
+    <script>
+      const HelloVueApp = {
+        data() {
+          return {
+            username: "zs",
+            gender: "男",
+            desc: '<i style="color:red;">abc<i>',
+          };
+        },
+      };
+
+      Vue.createApp(HelloVueApp).mount("#app");
+    </script>
+  </body>
+</html>

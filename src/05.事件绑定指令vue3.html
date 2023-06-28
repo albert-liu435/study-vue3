@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./lib/vue-3.3.4.js"></script>
+  </head>
+  <body>
+    <!-- vue 实例要控制的 DOM 区域 -->
+    <div id="app">
+      <h3>count 的值为：{{count}}</h3>
+      <!-- TODO：点击按钮，让 data 中的 count 值自增 +1 -->
+      <button v-on:click="addCount">+1</button>
+
+      <button @click="count += 1">增加 1</button>
+      <button @click="greet">greet</button>
+    </div>
+
+    <script>
+      const VueData = {
+        data() {
+          return {
+            // 计数器的值
+            count: 0,
+            food: "ice-cream",
+          };
+        },
+        method: {
+          greet() {
+            console.log("greet");
+          },
+        },
+      };
+      Vue.createApp(VueData).mount("#app");
+    </script>
+  </body>
+</html>
