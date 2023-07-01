@@ -1,10 +1,52 @@
-//import './assets/main.css'
-//new Vue()创建一个应用实例对象
+// //import './assets/main.css'
+// //new Vue()创建一个应用实例对象
+// import { createApp } from "vue";
+
+// // import App from "./App.vue";
+
+// // import App from "./components/props/App.vue";
+
+// // import App from "./components/propsdefault/App.vue";
+// // import App from "./components/computeddefault/App.vue";
+// // import App from "./components/computed/App.vue";
+// // import App from "./components/customEventdefault/App.vue";
+// import App from "./components/v-modeldefault/App.vue";
+
+// //1、以App作为参数生成一个应用实例对象
+// //2、挂载到id位app的节点上
+// const app = createApp(App);
+
+// //注册全局组件
+// app.mount("#app");
+
+// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////computedstudy/////////////////////////////////////////////////////////////////
+// //import './assets/main.css'
+// import { createApp } from "vue";
+
+// import App from "./components/computedstudydefault/App.vue";
+
+// import "./assets/css/bootstrap.css";
+// import "./assets/css/index.css";
+
+// //1、以App作为参数生成一个应用实例对象
+// //2、挂载到id位app的节点上
+// const app = createApp(App);
+
+// //注册全局组件
+// app.mount("#app");
+// //////////////////////////////////////////////////////computedstudy/////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////todo任务列表案例/////////////////////////////////////////////////////////////////
+
 import { createApp } from "vue";
 
-// import App from "./App.vue";
+import App from "./components/tododefault/App.vue";
 
-import App from "./components/props/App.vue";
+import "./assets/css/bootstrap.css";
+//引入全局样式
+import "./assets/main.css";
 
 //1、以App作为参数生成一个应用实例对象
 //2、挂载到id位app的节点上
@@ -12,3 +54,4 @@ const app = createApp(App);
 
 //注册全局组件
 app.mount("#app");
+//////////////////////////////////////////////////////todo任务列表案例/////////////////////////////////////////////////////////////////
