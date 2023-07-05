@@ -1,0 +1,21 @@
+:root {
+  font-size: 12px;
+}
+
+body {
+  padding: 8px;
+}
+
+/* 被激活的路由链接，默认会应用一个叫做 router-link-active 的类名。开发者可以使用此类名选择器，为激活
+的路由链接设置高亮的样式 */
+.router-link-active {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.active-router {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
